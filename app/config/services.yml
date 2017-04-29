@@ -7,3 +7,7 @@ services:
     #service_name:
     #    class: AppBundle\Directory\ClassName
     #    arguments: ['@another_service_name', 'plain_value', '%parameter_name%']
+     tank.rpc_sample_service:
+            class: AppBundle\Tank\RPC\TestCommandRPC
+            tags:
+                - { name: gos_web_socket.rpc }
